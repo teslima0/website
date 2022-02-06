@@ -1,0 +1,142 @@
+
+{% extends 'root.html' %}
+
+{% load static %}
+
+{% block content %}
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portolio</h2>
+          <ol>
+            <li><a href="{% url  'homepage'  %}">Home</a></li>
+            <li>Portolio</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+   <!-- ======= Portfolio Section ======= -->
+   <section id="portfolio" class="portfolio">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+      </div>
+
+      <div class="row" data-aos="fade-up">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">Desktop App</li>
+            <li data-filter=".filter-card">Mobile App</li>
+            <li data-filter=".filter-web">Web Based App</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container" data-aos="fade-up">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <img src="{% static 'assets/img/portfolio/portfolio-7.png'%}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Profile Website</h4>
+            <p>Profile Website</p>
+            <a href="{% static 'assets/img/portfolio/portfolio-7.jpg'%}" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+            <!--<a href="{% url  'FormView'  %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
+          </div>
+        </div>
+        
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <img src="{% static 'assets/img/portfolio/portfolio-71.png'%}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Profile Website</h4>
+            <p>Profile Website</p>
+            <a href="{% static 'assets/img/portfolio/portfolio-71.png'%}" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+            <a href="{% url  'cgpapage'  %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <img src="{% static 'assets/img/portfolio/portfolio-5.png'%}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Age Calculator</h4>
+            <p>age calculator</p>
+            <a href="{% static 'assets/img/portfolio/portfolio-5.jpg'%}" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+            <!--<a href="{% url  'FormView2'  %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <img src="{% static 'assets/img/portfolio/portfolio-4.png'%}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>BlackJack</h4>
+            <p>Card</p>
+            <a href="{% static 'assets/img/portfolio/portfolio-41.png'%}" data-gall="portfolioGallery" class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+            <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <img src="{% static 'assets/img/portfolio/portfolio-6.png'%}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Twitter Sentiment Analysis</h4>
+            <p>Web App</p>
+            <a href="{% static 'assets/img/portfolio/portfolio-6.png'%}" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+            <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <img src="{% static 'assets/img/portfolio/portfolio-5.png'%}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>CGPA</h4>
+            <p>App</p>
+            <a href="{% static 'assets/img/portfolio/portfolio-5.png'%}" data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+            <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <img src="{% static 'assets/img/portfolio/portfolio-8.png'%}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Database</h4>
+            <p>Database</p>
+            <a href="{% static 'assets/img/portfolio/portfolio-8.png'%}" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+            <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <img src="{% static 'assets/img/portfolio/portfolio-9.jpg'%}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Calculator</h4>
+            <p>Calculator</p>
+            <a href="{% static 'assets/img/portfolio/portfolio-6.jpg'%}" data-gall="portfolioGallery" class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+            <a href="{% url  'cgpapage'  %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <img src="{% static 'assets/img/portfolio/portfolio-5.png'%}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4> Age Calculator</h4>
+            <p>Web</p>
+            <a href="{% static 'assets/img/portfolio/portfolio-5.png'%}" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+            <a href="{% url  'homepag'  %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Portfolio Section -->
+
+  </main><!-- End #main -->
+  {% endblock %}

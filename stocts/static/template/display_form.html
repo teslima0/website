@@ -1,0 +1,57 @@
+{% extends 'root.html' %}
+{% block title %}sentiment {% endblock %}
+
+
+
+{% block content %}
+<section class="breadcrumbs">
+  <div class="container">
+
+    <div class="d-flex justify-content-between align-items-center">
+      <h1 style="color: rgb(71, 212, 255); font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Sentiment Analysis </h1>
+      <ol>
+        <li><a href="{% url  'homepage'  %}">Home</a></li>
+        <li>Sentiment Analysis</li>
+      </ol>
+    </div>
+    <h4 > <spant style="color:red;">Note!!! the accuracy of this classifier is 60% which make it far from being perfect. The modified version of this app with higer accuracy have been push to github.</spant></h4>
+  </div>
+</section><!-- End Breadcrumbs -->
+
+<section class="container">
+    <br><br>
+       
+        
+   
+
+     <br><br>
+    <div class="form-group">
+    <form action = "/predict_text/" method = "POST">
+    {% csrf_token %}
+    {{error_empt}} 
+    {{error_dig}}                
+      <!--{{form.pred}}
+
+        
+    
+        <input type="text" id="pred" name="pred" >-->
+       <textarea class="form-control" id="exampleFormControlTextarea1" name="pred" ></textarea>
+    
+        <!--<input type="submit" value="Submit">-->
+       <!--  {{form}}-->
+    
+      <button style="margin-top: 0.5em;" class="btn btn-secondary">Predict</button>
+                    </form>
+                  </div>      
+      
+    <span style="color: rgb(247, 118, 14); text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: x-large;">{{predictions}}</span>  
+                    
+                
+                    
+       
+      </section>   
+
+
+{% endblock %}
+
+

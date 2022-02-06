@@ -1,0 +1,37 @@
+{% extends 'blog_base.html' %}
+{% block title %}Edit Profile {% endblock %}
+
+
+
+{% block content %}
+<section class="container">
+<br><br>
+{% if user.is_authenticated %}
+    {% if user.id == profile.user.id %}
+
+       
+                <h1>Edit Profile Page </h1> 
+
+                <br><br>
+                <div class="form-group" enctype="multipart/form-data">
+                <form method="POST">
+                    {% csrf_token %}
+                
+                    {{ form.as_p }}
+                    
+                    <button class="btn btn-secondary">Update Profile  Page</button>
+                </form>
+                </div>
+
+       
+    {% else %}
+        you are not the correct user
+                
+    {% endif %}
+{% else %}
+    
+    you are not login yet, please kindly login        
+{% endif %}
+</section>
+
+{% endblock %}

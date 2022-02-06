@@ -1,0 +1,229 @@
+{% extends 'root.html' %}
+
+{% load static %}
+
+
+
+{% block content %}
+
+<link href="{% static 'assets/css/style2.css'%}" rel="stylesheet">
+
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>About</h2>
+          <ol>
+            <li><a href="{% url  'homepage'  %}">Home</a></li>
+            <li>Web Development</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about-us" class="about-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</strong></h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h3 style="font-weight: bolder;"> WEBSITE DESIGN SERVICES</h3>
+            <p style="text-align: justify; padding: 1px; font-size: 14pt;  font-family:'Times New Roman', Times, serif">
+                Tamarcom web development company located in Nigeria, offers a numerous range of website design services to both SMEs and large enterprise.
+                 Our team of skilled developers and digital marketing experts employ latest technologies and working strategy to build excellent user-experience website for business and online web-based 
+                app that is dynamic and promote them for wider coverage. Reach out to our web developers for a powerful online presence that will take your brand to next level.
+            </p>
+            <h3 style="font-weight: bolder;">We Craft Websites for Various Industries</h3>
+           
+              <ul>
+                <li><i class="ri-check-double-line"></i> 
+                   Website For Retail & eCommerce Industry
+                  </li>
+                <li><i class="ri-check-double-line"></i> 
+                    Website For Health Sector
+                  </li>
+                <li><i class="ri-check-double-line"></i>
+                   Website For Education & eLearning Sector
+                  </li>
+
+                  <li><i class="ri-check-double-line"></i> 
+                    Website for Sports Industry
+                  </li>
+                <li><i class="ri-check-double-line"></i>
+                    Website for Travel & Tourism Industry
+                  </li>
+              </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+            <h3 style="font-weight: bolder;">A Glimpse of Our Works</h3>
+
+      
+            <!--
+
+              <div class="slidercontainers">  
+                <div class="showSlide fade">  
+                    <img st src="{% static 'assets/img/portfolio/portfolio-5.jpg'%}" width="300px" height="200px" class="img-fluid " alt="">  
+                    <div class="contents">Slide1 heading</div>  
+                </div>  
+                <div class="showSlides fade">  
+                    <img st src="{% static 'assets/img/portfolio/portfolio-2.jpg'%}"  width="300px" height="200px" class="img-fluid " alt="">  
+                    <div class="contents">Slide2 heading</div>  
+                </div>  
+          
+                <div class="showSlides fade">  
+                    <img st src="{% static 'assets/img/portfolio/portfolio-3.jpg'%}"  width="300px" height="200px" class="img-fluid " alt="">
+                    <div class="contents">Slide3 heading</div>  
+                </div>  
+                <div class="showSlides fade">  
+                    <img st src="{% static 'assets/img/portfolio/portfolio-4.jpg'%}"  width="300px" height="200px"  class="img-fluid " alt=""> 
+                    <div class="contents">Slide4 heading</div>  
+                </div>  
+                 Navigation arrows 
+               <a class="left" onclick="nextSlide(-1)">❮</a> 
+                <a class="right" onclick="nextSlide(1)">❯</a>  
+            </div>  
+
+        -->
+        <!-- Slideshow container -->
+<div class="slideshow-containers">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides1 fade1">
+    <div class="numbertexts" style="color:goldenrod; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">1 / 7</div>
+   
+    <img st src="{% static 'assets/img/img4.PNG'%}"   class="img-fluid " alt="Calculaor"> 
+    <div class="texts" style="color:goldenrod; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Calculator</div>
+  </div>
+
+  <div class="mySlides1 fade1">
+    <div class="numbertexts" style="color:goldenrod; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">2 / 7</div>
+   
+    <img st src="{% static 'assets/img/game1.PNG'%}"   class="img-fluid " alt="Blackjack"> 
+    <div class="texts" style="color:goldenrod; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Blackjack 1/3</div>
+  </div>
+
+  <div class="mySlides1 fade1">
+    <div class="numbertexts" style="color:goldenrod; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> 3 / 7</div>
+   
+    <img st src="{% static 'assets/img/game2.PNG'%}"   class="img-fluid " alt="Blackjack"> 
+    <div class="texts" style="color:goldenrod; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Blackjack 2/3</div>
+  </div>
+
+  <div class="mySlides1 fade1">
+    <div class="numbertexts" style="color:goldenrod; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">4 / 7</div>
+   
+    <img st src="{% static 'assets/img/game3.PNG'%}"   class="img-fluid " alt="Blackjack"> 
+    <div class="texts" style="color:goldenrod; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Blackjack 3/3</div>
+  </div>
+
+  <div class="mySlides1 fade1">
+    <div class="numbertexts" style="color:goldenrod; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">5 / 7</div>
+    
+    <img st src="{% static 'assets/img/6.PNG'%}"    class="img-fluid " alt="Databaseimg"> 
+    <div class="texts" style="color:goldenrod; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Database System</div>
+  </div>
+
+  <div class="mySlides1 fade1">
+    <div class="numbertexts" style="color:goldenrod; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">6 / 7</div>
+   
+    <img st src="{% static 'assets/img/img2.PNG'%}"   class="img-fluid " alt="CGPA"> 
+    <div class="texts" style="color:goldenrod; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">CGPA Calculaor</div>
+  </div>
+
+  
+
+  
+
+
+  <div class="mySlides1 fade1">
+    <div class="numbertexts" style="color:goldenrod; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">7 / 7</div>
+   
+    <img st src="{% static 'assets/img/img1.PNG'%}"   class="img-fluid " alt="Tamacomlogo"> 
+    <div class="texts" style="color:goldenrod; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Tamacom logo</div>
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prevs" onclick="plusSlides1(-1)">&#10094;</a>
+  <a class="nexts" onclick="plusSlides1(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot1" onclick="currentSlide1(1)"></span>
+  <span class="dot1" onclick="currentSlide1(2)"></span>
+  <span class="dot1" onclick="currentSlide1(3)"></span>
+</div>
+
+
+
+          <!-- <img st src="{% static 'asset/img/portfolio/portfolio-5.jpg'%}" width="600px" height="800px" class="img-fluid " alt="">  --> 
+          
+          </div>
+        </div>
+
+
+        <div class="row content">
+            <div class="col-lg-6" data-aos="fade-right">
+                <h3 style="font-weight: bolder;"> Full-Stack Web App Development</h3>
+              <p>
+                
+                We are abreast and have deep knowledge on the newest technologies to develop web-based apps for business. 
+                Check out the technological we used to enrich the development of an advanced full stack web application:
+                
+                
+              </p>
+              <ul>
+                <li><i class="ri-check-double-line"></i> <h4>Development of Front-End </h4>
+                    We are proud of our team who are skilled in frontend technologies such as Angular, CSS, Python and React. Our high-end development, UI enhancement, and performance tuning are topnotch.
+                     Let us help you to build your dream web.
+                  </li>
+                <li><i class="ri-check-double-line"></i> <h4>Development of Back-End</h4>
+                    Our backend developers have years of expertise in building robust and scalable web app to help your business flourish. 
+                    We keep up with industry trends and sophisticated technologies such as Django, Flask, Laravel, Node.js, and others. We meticulously work to produce a finished product that is flawless.
+                  </li>
+                
+                  
+              </ul>
+
+              
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+                <ul>
+                    <li><i class="ri-check-double-line"></i><h4>Developing and  Integrating API</h4>
+                        The computing interface that defines how several software intermediaries interact is known as API. Tamarcom places a strong emphasis on RESTful API development. 
+                        We create a secure REST framework as a robust and flexible toolkit for developing custom web APIs. To ensure REST API security, we use a three-level protocol: authentication / tokenization, encryption,
+                         and origin validation.
+                      </li>
+    
+                <li><i class="ri-check-double-line"></i><h4>Database</h4>
+                    Our programmers are skilled at working with a variety; of databases to guarantee that the data in your application is secure and accessible at all times. Our experience includes PostgreSQL, MySQL,
+                     SQlite and NoSQL databases, as well as other relational and non-relational database management systems (MongoDB, Apache Cassandra). We specialize in Database Middleware, 
+                    which simplifies distributed transaction execution, improves database services such as fault tolerance and performance scaling, and adjusts to workloads through the use of adaptive queuing middleware.
+                  </li></ul>
+                  
+             
+            </div>
+          </div>
+  
+
+      </div>
+    </section><!-- End About Us Section -->
+
+
+   
+
+    <script src="{% static 'assets/js/main2.js'%}"></script>
+
+{% endblock %}
+

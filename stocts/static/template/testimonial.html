@@ -1,0 +1,112 @@
+{% extends 'root.html' %}
+{% load static %}
+
+{% block content %}
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Testimonials</h2>
+          <ol>
+            <li><a href="{% url  'homepage'  %}">Home</a></li>
+            <li>Testimonials</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="testimonial-item">
+              <img src="{% static 'assets/img/testimonials/testimonials-1.jpg'%}" class="testimonial-img" alt="">
+              <h3>Saul Goodman</h3>
+              <h4>Ceo &amp; Founder</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Tamarcom is a greate IT based company is one of the great company out there that treat their customer with diginity and respect. they deligently carried out their works.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-item mt-4 mt-lg-0">
+              <img src="{% static 'assets/img/testimonials/testimonials-2.jpg'%}" class="testimonial-img" alt="">
+              <h3>Sara Wilsson</h3>
+              <h4>Designer</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                I've been working with tamarcom for long and they havent disappoint me, be rest assure that you secure. in no time from now, your business will boom.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-item mt-4">
+              <img src="{% static 'assets/img/testimonials/testimonials-3.jpg'%}" class="testimonial-img" alt="">
+              <h3>Miss Shukura</h3>
+              <h4>Store Owner</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Tamarcom is just an amazing company, their dexterity is secound to none. The work their are doing is a testomony to this. you guys are amazing.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-item mt-4">
+              <img src="{% static 'assets/img/testimonials/testimonials-4.jpg'%}" class="testimonial-img" alt="">
+              <h3>Abdul Malik</h3>
+              <h4>Freelancer</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+               Tamarcom has been a fantastic firm ever since we cross path. their words is their bonds. theyehave been keeping to time. thumps up dudes! 
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="testimonial-item mt-4">
+              <img src="{% static 'assets/img/testimonials/testimonials-5.jpg'%}" class="testimonial-img" alt="">
+              <h3>Okunade Jamiu</h3>
+              <h4>Entrepreneur</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                This dudes are fantastic. they have been working the talk. no regret doing business with them. the sky is your limit, keep good work going.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="testimonial-item mt-4">
+              <img src="{% static 'assets/img/testimonials/testimonials-6.jpg'%}" class="testimonial-img" alt="">
+              <h3>Miss Aisha</h3>
+              <h4>Store Owner</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                It is one of the best decision i ever made is to have work with these great people. the app they help buit for my business is a furtune turn around.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+  </main><!-- End #main -->
+  {% endblock %}

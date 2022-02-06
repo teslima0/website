@@ -1,0 +1,36 @@
+{% extends 'blog_base.html' %}
+{% block title %}create a new blog post {% endblock %}
+
+
+
+{% block content %}
+<section class="container">
+<br><br>
+{% if user.is_authenticated %}
+
+       
+        <h1>Add Post </h1> 
+
+        <br><br>
+        <div class="form-group" enctype="multipart/form-data">
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.media }}
+            {{ form.as_p }}
+            
+            <button class="btn btn-secondary">Post</button>
+        </form>
+        </div>
+
+        <script>
+            var name="{{ user.id }}";
+            document.getElementById('tamar').value= name;
+         
+        </script>
+{% else %}
+ you are not login yet, please kindly login
+        
+{% endif %}
+</section>
+
+{% endblock %}

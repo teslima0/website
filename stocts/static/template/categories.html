@@ -1,0 +1,36 @@
+{% extends 'blog_base.html' %}
+
+{% block title %} blog category {% endblock %}
+
+{% block content %}
+<section class="container">
+<br><br>
+
+{% if category_posts %}
+        <h3>{{ cats }}</h3>
+
+
+        <ul>
+        {% for post in category_posts %}
+                <li><a href="{% url  'blogdetailpage' post.pk  %}">{{ post.title}}</a> 
+                    - {{ post.author.first_name}}  {{ post.author.last_name}} - 
+                    
+                    {{ post.post_date }} 
+                    <small>
+                    {% if user.is_authenticated %}
+
+                    - <a href="{% url  'update_post' post.pk  %}">(edit)</a>
+                        <a href="{% url  'delete_post' post.pk  %}">(delete)</a>
+                    {% endif %}
+                    </small>
+                    <br>
+                    {{ post.body | slice:":200" | safe }}</li>
+
+        {% endfor %}
+        </ul>
+{% else %}
+    <h1> sorry the page doesn't exit.... </h1>
+{% endif %}
+
+</section>
+{% endblock %}

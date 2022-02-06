@@ -1,0 +1,36 @@
+{% extends 'root.html' %}
+
+
+{% block content %}
+    <!-- ======= Breadcrumbs ======= -->
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+        <h3 class="logo mr-auto"><a href="{% url  'homepage'  %}"><span>TAM</span>ARCOM'S CGPA RESULT</a></h3>
+          
+          <ol>
+            <li><a href="{% url  'homepage'  %}">Home</a></li>
+            <li>Result</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <div class="container">
+       
+        Semester Total Unit: {{su}} <br>
+        Semester Total Point: {{sp}}<br>
+        Grade: {{result}}<br>
+        class: {{level}}
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  {% endblock %}
+

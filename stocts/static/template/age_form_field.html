@@ -1,0 +1,78 @@
+
+{% extends 'root.html' %}
+
+
+{% block content %}
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Age Calculator</h2>
+          <ol>
+            <li><a href="{% url  'homepage'  %}">Home</a></li>
+            <li>Age Calculator</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="Inner Page">
+      <div class="container">
+
+
+
+      <form action="/add/" method='POST'>
+        
+         {% csrf_token %}
+         <center>
+         <div class="form-row">
+           <div class="form-group col-md-2">
+             <label for="name">Birth Day</label>
+             {{form.birth_day}}
+           </div>
+           <div class="form-group col-md-2">
+           <label for="name">Birth Month</label>
+           {{form.b_month}}
+          
+           </div>
+
+           <div class="form-group col-md-2">
+             <label for="name">Birth year</label>
+             
+             {{form.b_yrs}}
+          </div>
+
+         </div>
+
+         <div class="form-row">
+          <div class="form-group col-md-2">
+            <label for="name">Given Day</label>
+            {{form.g_day}}
+          </div>
+          <div class="form-group col-md-2">
+            <label for="name">Given Month</label>
+            {{form.g_month}}
+         
+          </div>
+
+          <div class="form-group col-md-2">
+            <label for="name">Given year</label>
+            {{form.g_yrs}}
+        
+         </div>
+
+        </div>
+      </center>
+         
+      <button style="margin-top: 0.5em;" class="btn btn-secondary">CHECK YOUR AGE</button>
+        
+        
+       </form>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+ {% endblock %}

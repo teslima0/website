@@ -1,0 +1,113 @@
+{% extends 'root.html' %}
+
+{% load static %}
+{% load staticfiles %}
+
+{% block content %}
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>About</h2>
+          <ol>
+            <li><a href="{% url  'homepage'  %}">Home</a></li>
+            <li>Video Explainer</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about-us" class="about-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Video Explainer Services</strong></h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h3 style="font-weight: bolder;"> Video Explainer  </h3>
+            <p style="text-align: justify; padding: 1px; font-size: 14pt;  font-family:'Times New Roman', Times, serif">
+                
+
+                
+            One of the most efficient and effective way of introducing your business, brand, products, or services to potential customers is through video. 
+            Partner with expert video explainers to increase your brand awareness, get noticed faster, and expand your consumer base. <br><br>Tamarcom technology offers a wide range of digital services to clients across the country. 
+            Our corporate video production services assist you in converting your visitors into brand loyalists.<br><br> Leverage on our explainer video services to make engaging videos for your target audience.
+
+            </p>
+            
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+            <h3 style="font-weight: bolder;">A Glimpse of Our Works</h3>
+              <!-- Slide 1 -->
+       <video width="600" height="350" controls>
+          <source src="{% static 'videos/adv.mp4' type= 'video/mp4' %}" class="img-fluid " alt="">
+          your browsers does not support this video
+
+        </video>
+
+          </div>
+        </div>
+
+
+        <div class="row content">
+            <div class="col-lg-6" data-aos="fade-right">
+                <h3 style="font-weight: bolder;"> The Effect Of An Explainer Video On Business</h3>
+              <p style="text-align: justify; padding: 1px; font-size: 14pt;  font-family:'Times New Roman', Times, serif">
+                
+                You will be able to grasp your customer's attention immediately by employing video explainer that will help you produce a well thought out script, and engaging video for your business.
+                 It makes them to glue with your web page, which in turn increases your conversion rate. This also increases your website rank on Google search ranking. <br><br>
+                 Explainer videos created by a trustworthy explainer video production firm help consumers to remember information for long periods of time. 
+                 They are most likely going to share favorite videos on different social media platforms, thereby encouraging word-of-mouth advertising. This is an excellent strategy for your business to gain new customers.
+                 <br><br>You can also share your business explainer video on YouTube or other video sharing sites, where it could "go viral." This can quickly produce a large number of views and likes, 
+                 which in turn increase the traffic on your website. 
+                 <br><br>
+              
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+                Explainer videos with animation can also help to convey your company's individuality.
+                 This instills customer's confidence on your products and services, as well as in you. Consequently, your business gains more customers,
+                  who may later become a loyal customer to your brand in the future.
+                  <br><br>You can engage your customers and excite them about your brand by creating video explainer for your business. Professionally produced video will grow your business in various way:
+              </p>
+             
+           
+              <ul>
+                <li><i class="ri-check-double-line"></i> 
+                    	Define a clear and unique objective for your business
+                  </li>
+                <li><i class="ri-check-double-line"></i> 
+                    Unveil new product or service in an engaging manner.
+                  </li>
+                <li><i class="ri-check-double-line"></i>
+                    	Attract potential customers and expand brand visual coverage.
+                  </li>
+
+                  <li><i class="ri-check-double-line"></i> 
+                    Ranking high your website on Google search engines. 
+                  </li>
+                <li><i class="ri-check-double-line"></i>
+                    Higher repeated purchase and conversion rates. 
+                  </li>
+
+                  <li><i class="ri-check-double-line"></i>
+                    Drastically reduce cart abandonment. 
+                  </li>
+                  
+              </ul>
+             
+            </div>
+          </div>
+  
+
+      </div>
+    </section><!-- End About Us Section -->
+
+
+{% endblock %}

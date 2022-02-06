@@ -1,0 +1,168 @@
+
+
+{% extends 'root.html' %}
+
+
+{% block content %}
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          
+          
+          <h4 style="color:blue;">Tamarcom CGPA Calculator. Kindly insert you grade and unit to check your class.</h4>
+          <ol>
+            <li><a href="{% url  'homepage'  %}">Home</a></li>
+            <li>CGPA Calculator</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner Page">
+      <div class="container">
+
+
+
+     
+<form action="/gpa/" method="POST">
+        
+         {% csrf_token %}
+         <center>
+         <div class="form-row">
+           <div class="form-group col-md-2" style="margin-right:2em;">
+             <label for="name">Course1 Grade</label>
+             {{form.nums1}}
+           </div>
+           <div class="form-group col-md-2" style="margin-right:2em;">
+           <label for="name">Course1 unit</label>
+           {{form.nums2}}
+           <div class="validate"></div>
+           </div>
+           <!-- <div class="form-row">-->
+            <div class="form-group col-md-2" style="margin-right:2em;">
+              <label for="name">Course2 Grade</label>
+              {{form.nums3}}
+            </div>
+            <div class="form-group col-md-2">
+            <label for="name">Course2 unit</label>
+            {{form.nums4}}
+            </div>
+          <!--</div>-->
+         </div>
+
+        
+
+          <div class="form-row">
+            <div class="form-group col-md-2" style="margin-right:2em;">
+              <label for="name">Course3 Grade</label>
+              {{form.nums5}}
+              <div class="validate"></div>
+            </div>
+            <div class="form-group col-md-2" style="margin-right:2em;">
+            <label for="name">Course3 unit</label>
+            {{form.nums6}}
+            </div>
+            <!--<div class="form-row">-->
+              <div class="form-group col-md-2" style="margin-right:2em;">
+                <label for="name">Course4 Grade</label>
+                {{form.nums7}}
+              </div>
+              <div class="form-group col-md-2">
+              <label for="name">Course4 unit</label>
+              {{form.nums8}}
+              </div>
+              <!-- </div>-->
+          </div>
+
+          
+
+          <div class="form-row">
+            <div class="form-group col-md-2"style="margin-right:2em;">
+              <label for="name">Course5 Grade</label>
+              {{form.nums9}}
+            </div>
+            <div class="form-group col-md-2"style="margin-right:2em;">
+            <label for="name">Course5 unit</label>
+            {{form.nums10}}
+            </div>
+            <!--<div class="form-row">-->
+              <div class="form-group col-md-2" style="margin-right:2em;">
+                <label for="name">Course6 Grade</label>
+                {{form.nums11}}
+              </div>
+              <div class="form-group col-md-2">
+              <label for="name">Course6 unit</label>
+              {{form.nums12}}
+              </div>
+            <!--</div>-->
+          </div>
+
+          
+
+          <div class="form-row">
+            <div class="form-group col-md-2" style="margin-right:2em;">
+              <label for="name">Course7 Grade</label>
+              {{form.nums13}}
+            </div>
+            <div class="form-group col-md-2" style="margin-right:2em;">
+            <label for="name">Course7 unit</label>
+            {{form.nums14}}
+            </div>
+             <!--<div class="form-row">-->
+              <div class="form-group col-md-2" style="margin-right:2em;">
+                <label for="name">Course8 Grade</label>
+                {{form.nums15}}
+              </div>
+              <div class="form-group col-md-2">
+              <label for="name">Course8 unit</label>
+              {{form.nums16}}
+              </div>
+            <!--</div>-->
+          </div>
+
+         
+
+          <div class="form-row">
+            <div class="form-group col-md-2" style="margin-right:2em;">
+              <label for="name">Course9 Grade</label>
+              {{form.nums17}}
+            </div>
+            <div class="form-group col-md-2" style="margin-right:2em;">
+            <label for="name">Course9 unit</label>
+            {{form.nums18}}
+            </div>
+             <!--<div class="form-row">-->
+              <div class="form-group col-md-2" style="margin-right:2em;">
+                <label for="name">Course10 Grade</label>
+                {{form.nums19}}
+              </div>
+              <div class="form-group col-md-2">
+              <label for="name">Course10 unit</label>
+              {{form.nums20}}
+              </div>
+  
+            <!--</div>-->
+  
+          </div>
+          
+         
+          
+
+
+      </center>
+         
+         <div class=""><button type="submit" class="btn btn-primary" >Submit</button></div>
+        
+        
+       </form>
+      
+      </div>
+      
+    </section>
+
+  </main><!-- End #main -->
+
+ {% endblock %}
